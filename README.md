@@ -1,1 +1,1 @@
-# -real-time-election-tracking-project
+# real-time-election-tracking-project
