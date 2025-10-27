@@ -3,7 +3,7 @@ Un système complet de traitement de votes en temps réel utilisant Apache Kafka
 #  Architecture Globale
 [Générateur Données] → [Kafka] → [Traitement Spark] → [Kafka] → [Dashboard Streamlit]
          ↓                      ↓                       ↓
-   [PostgreSQL]          [Checkpoints]             [Visualisation]
+   [PostgreSQL]          [Checkpoints]              [Visualisation]
 
 # Stack Technologique Complète
 Génération données : Python, Faker API 
