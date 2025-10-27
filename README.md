@@ -10,6 +10,7 @@ Génération données : Python, Faker API
 
 Message Broker : Apache Kafka
 
+
 Traitement temps réel : Apache Spark Streaming
 
 Stockage persistant : PostgreSQL
