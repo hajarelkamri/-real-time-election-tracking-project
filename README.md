@@ -37,7 +37,7 @@ Fonctionnalités principales
   
   Production Kafka avec delivery reports
   
-  # 2.Processeur de Votes (voting.py)
+# 2.Processeur de Votes (voting.py)
   
    Architecture Consumer/Producer
   consumer = Consumer()  # Lecture votes entrants
@@ -52,7 +52,7 @@ Fonctionnalités principales
   
   Réémission vers topic de traitement
   
-  # 3.Traitement Spark Streaming (spark-streaming.py)
+# 3.Traitement Spark Streaming (spark-streaming.py)
   Pipeline de traitement
   votes_df = spark.readStream()  # Lecture Kafka
   enriched_votes_df = votes_df.withWatermark()  # Fenêtrage temporel
@@ -67,7 +67,7 @@ Fonctionnalités principales
   
   Émission vers topics Kafka de sortie
 
-  # 4.Dashboard Temps Réel (streamlit.py)
+# 4.Dashboard Temps Réel (streamlit.py)
    Visualisations implémentées
   - Métriques principales (électeurs, candidats)
   - Graphique barres colorées
