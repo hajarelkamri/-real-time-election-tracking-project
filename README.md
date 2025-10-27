@@ -19,9 +19,9 @@ Visualisation : Streamlit, Matplotlib
 Orchestration : Python Scripts
 
 # Composants du Système
-1. Générateur de Données (main.py)
+# 1.Générateur de Données (main.py)
 python
-# Fonctionnalités principales
+Fonctionnalités principales
 - Génération de données électorales réalistes
 - Peuplement automatique de la base PostgreSQL
 - Production de messages Kafka
@@ -37,9 +37,9 @@ python
   
   Production Kafka avec delivery reports
   
-  2.  Processeur de Votes (voting.py)
+  # 2.Processeur de Votes (voting.py)
   
-  # Architecture Consumer/Producer
+   Architecture Consumer/Producer
   consumer = Consumer()  # Lecture votes entrants
   producer = Producer()  # Émission votes traités
   Fonctionnalités :
@@ -52,8 +52,8 @@ python
   
   Réémission vers topic de traitement
   
-  3.  Traitement Spark Streaming (spark-streaming.py)
-  # Pipeline de traitement
+  # 3.Traitement Spark Streaming (spark-streaming.py)
+  Pipeline de traitement
   votes_df = spark.readStream()  # Lecture Kafka
   enriched_votes_df = votes_df.withWatermark()  # Fenêtrage temporel
   aggregated_data = votes_df.groupBy().agg()  # Agrégations
@@ -67,8 +67,8 @@ python
   
   Émission vers topics Kafka de sortie
 
-  4. Dashboard Temps Réel (streamlit.py)
-  # Visualisations implémentées
+  # 4.Dashboard Temps Réel (streamlit.py)
+   Visualisations implémentées
   - Métriques principales (électeurs, candidats)
   - Graphique barres colorées
   - Camembert distribution votes
